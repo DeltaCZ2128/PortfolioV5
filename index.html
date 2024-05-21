@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  
+  <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
+
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+   
+  <link rel="stylesheet" href="style.css" />
+
+ 
+  <script src="https://kit.fontawesome.com/{{YOUR KIT KEY}}.js" crossorigin="anonymous"></script>
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("{{YOUR USER KEY}}");
+    })();
+  </script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">My<span> PORTFOLIO</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#services" class="menu-btn">Services</a></li>
+          <li><a href="#skills" class="menu-btn">Skills</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </nav>
+ 
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+    
+ 
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1" data-aos="fade-up">Hello, my name is</div>
+        <div class="text-2">SAM LEDESMA</div>
+        <div class="text-3">Im a <span class="typing"></span></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down" >About Me</h2>
+      <div class="about-content">
+        <div class="column left" data-aos="fade-right" >
+          <img src="Sam.jpg" alt="" />
+        </div>
+        <div class="column right" data-aos="fade-up">
+          <div class="text">
+            I'm {{SAM LEDESMA}} and Im a <span class="typing-2"></span>
+          </div>
+          <p class="paragraph">
+            No one is, from, to never, all born from a because of ME holding our falling option to that accusation openly different with from not an escapes non. Blessed delightful similar what holding body temporary. So the pain of things almost and minimal here and layer :D
+          </p>
+          <a href="https://drive.google.com/file/d/1WulSGxnopeAi5QGeS0cGkWF3Zio5xpPy/view?usp=drive_link">Download
+            Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Services</h2>
+      <div class="serv-content">
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-laptop-code"></i>
+            <div class="text">{{SKILL 1}}</div>
+            <p>
+              I specialize in creating well-structured and efficient HTML code to ensure your web pages are organized, accessible, and visually appealing. Whether you need a simple landing page or a complex multi-page website, my HTML skills can bring your vision to life with clean and maintainable code
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-code"></i>
+            <div class="text">{{SKILL 2}}</div>
+            <p>
+              CSS code to ensure your web pages are organized, visually appealing, and responsive. My expertise in both HTML and CSS allows me to build websites that are not only functional but also aesthetically pleasing and user-friendly.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="text">{{SKILL 3}}</div>
+            <p>
+              I specialize in creating comprehensive web solutions that involve not only the front-end design with HTML and CSS but also robust back-end functionality using Java. My combined expertise ensures that your web applications are both visually appealing and highly functional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="skills" id="skills">
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">My Skills</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">
+            My creative skills & experiences.
+          </div>
+          <p class="paragraph-2">
+            I have a strong foundation in HTML and CSS, allowing me to design and implement visually appealing, responsive websites. My experience with Java enables me to develop robust back-end systems, ensuring that web applications are not only attractive but also highly functional and secure. With a keen eye for detail and a passion for clean, efficient code, I deliver web solutions that combine aesthetics and performance.
+          </p>
+          <a href="#about">Read More</a>
+        </div>
+        <div class="column right skill-box">
+          <div class="icons">
+            <img src="icons8-css3.svg" alt="css" id="css-icon" data-aos="flip-left">
+            <img src="icons8-javascript.svg" alt="js" id="js-icon" data-aos="flip-left">
+            <img src="icons8-react-native.svg" alt="react" id="react-icon" data-aos="flip-left">
+            <img src="icons8-flutter.svg" alt="flutter" id="flutter-icon" data-aos="flip-left">
+          </div>
+          <div class="icons">
+            <img src="icons8-html-5.svg" alt="html", id="html-icon" data-aos="flip-left">
+            <img src="icons8-nodejs.svg" alt="nodedjs" id="nodejs-icon" data-aos="flip-left">
+            <img src="icons8-visual-studio-code-2019.svg" alt="vscode" id="vscode-icon" data-aos="flip-left">
+            <img src="icons8-c++.svg" alt="c++" id="cpp-icon" data-aos="flip-left">
+      </div>
+  </section>
+
+ 
+  <section class="content" id="content">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">My Works</h2>
+      <div class="content-body" data-aos="fade-up">
+        <p class="paragraph-4">
+          
+        </p>
+        <div class="image-gallery">
+          <img src="SAM H.jpg" alt="Horizon Image 1" data-aos="fade-up">
+          <img src="Glitch , Marta Tozzi.jfif" alt="Horizon Image 2" data-aos="fade-up" data-aos-delay="100">
+          <img src="Calendar.PNG" alt="Horizon Image 3" data-aos="fade-up" data-aos-delay="200">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Contact Me</h2>
+      <div class="contact-content">
+        <div class="column left" data-aos="flip-left">
+          <div class="text">Let's Get in Touch</div>
+          <p class="paragraph-3">If you have any questions or would like to discuss a project, feel free to reach out. I'm always happy to connect and explore new opportunities for collaboration. Let's work together to create something amazing!
+          </p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">{{SAM LEDESMA}}</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Address</div>
+                <div class="sub-title">{{GRC}}</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">{{YOUGOT@MAIL}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right" data-aos="flip-right">
+          <div class="text">
+            Message Me
+          </div>
+          <form action="#Contact">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" id="fromName" placeholder="Name" required autocomplete="off">
+              </div>
+              <div class="field email">
+                <input type="email" id="emailSender" placeholder="Email" required autocomplete="off">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" id="subjectSender" placeholder="Subject" required autocomplete="off">
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" id="message" placeholder="Message" required autocomplete="off"></textarea>
+            </div>
+            <div class="button">
+              <button onclick='sendMail()' type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="text-center">
+      <span>
+        Created By <a href="#">{{SAM LEDESMA}}</a> | <span class="far fa-copyright"> </span> <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        <div>
+          <a href="{{YOUR LINKEDIN}}"><i class="fab fa-linkedin"></i></a>
+          <a href="{{YOUR GITHUB}}"><i class="fab fa-github"></i></a>
+          <a href="{{YOUR YOUTUBE}}"><i class="fab fa-youtube"></i></a>
+        </div>
+      </span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+     
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({easing : 'ease-in',delay: 100,duration: 300,offset:100});window.addEventListener('load', AOS.refresh);</script>
+</body>
+
+</html>
